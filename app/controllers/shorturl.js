@@ -1,6 +1,6 @@
 'use strict';
 
-// require('dotenv').load();
+require('dotenv').load();
 
 var appurl = process.env.APP_URL + 'url-shortener/';
 var valid = require('valid-url');
