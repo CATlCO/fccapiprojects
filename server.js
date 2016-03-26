@@ -22,7 +22,8 @@ mongo.connect(process.env.MONGO_URI, function (err, db) {
   routes(app, db);
   metadata(app);
 
-  app.listen(8080, function () {
+  var port = process.env.PORT || 8080;
+  app.listen(port, function () {
     console.log('Listening on port 8080...');
   });
 });
