@@ -8,7 +8,7 @@ var express = require('express'),
 
 // require('dotenv').load();
 
-mongo.connect(process.env.MONGO_URI, function (err, db) {
+mongo.connect(process.env.MONGOLAB_URI, function (err, db) {
 
   if (err) {
     throw new Error('Database failed to connect!');
