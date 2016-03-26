@@ -1,11 +1,17 @@
 {
-  "name": "beginner-app",
+  "name": "FFCApiProjects",
   "version": "1.0.0",
-  "description": "",
+  "description": "FreeCodeCamp API Projects",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
-  "author": "",
-  "license": "MIT"
+  "author": "Catico",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^1.2.0",
+    "express": "^4.12.4",
+    "express-session": "^1.11.3",
+    "mongoose": "^4.1.0"
+  }
 }
