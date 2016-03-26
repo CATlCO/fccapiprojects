@@ -1,0 +1,72 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+@import url(https://fonts.googleapis.com/css?family=Homemade+Apple);
+
+body{
+  font-family: 'Lato';
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+#logo {
+  width: 300px;
+  display: inline-block; }
+
+h1 {
+  display: inline-block;
+  font-family: 'Homemade Apple';
+  font-size: 30px;
+  color: white;
+  padding-left: 30px; 
+	vertical-align: middle; 
+  margin: 0;
+  margin-top: -20px;
+}
+
+header {
+  background-color: #006400;
+  text-align: center;
+  padding: 20px; }
+
+.links {
+  /*display: block;*/
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.links a {
+  display: inline-block;
+	text-decoration: none;
+	color: black;
+  padding: 10px 20px;
+  background-color: #eee;
+  color: #333;
+  margin-top: 20px;
+  width: 100%;
+  transition: color .3s ease, background-color .3s ease;
+}
+.links a:hover {
+  color: white;
+  background-color: #006400;
+
+}
+.container {
+  padding: 0 50px;
+}
+h2{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 30px 0 10px; 
+}
+a{
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  transition: all .3s ease;
+}
+.click, a:hover{
+  background-color: #006400;
+  color: white;
+}

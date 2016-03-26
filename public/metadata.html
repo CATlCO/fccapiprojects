@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>FreeCodeCamp - API Projects</title>
+      <link rel="stylesheet" type="text/css" href="/public/css/main.css">
+   </head>
+
+   <body>
+
+    <header>
+      <img id="logo" src="https://s3.amazonaws.com/freecodecamp/freecodecamp_logo.svg">
+      <h1>API Projects</h1>
+    </header>
+
+    <div class="container">
+      <h2>API Basejump: File Metadata Microservice</h2>
+          User stories:
+          <ol>
+            <li>I can submit a FormData object that includes a file upload.</li>
+            <li>When I submit something, I will receive the file size in bytes within the JSON response</li>
+          </ol>
+          <p>Example output:<br>
+          <code>{"size":879394}</code><p>
+          <form method="post" action="/metadata" enctype="multipart/form-data">
+            <input type="file" name="file">
+            <input type="submit" value="Upload">
+          </form> 
+          <a href="/">&lt; Back</a>
+    </div>
+   </body>
+</html>
