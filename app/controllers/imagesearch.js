@@ -1,6 +1,8 @@
 'use strict';
 
-require('dotenv').load();
+require('dotenv').config({
+  silent: true
+});
 
 var google = require('googleapis');
 var search = google.customsearch('v1');

@@ -6,7 +6,9 @@ var express = require('express'),
     mongo = require('mongodb').MongoClient,
     app = express();
 
-require('dotenv').load();
+require('dotenv').config({
+  silent: true
+});
 
 mongo.connect(process.env.MONGO_URI, function (err, db) {
 
