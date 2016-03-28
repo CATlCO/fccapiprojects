@@ -1,5 +1,6 @@
 'use strict';
 
+var url = require('url');
 var timestamp = require(process.cwd() + '/app/controllers/timestamp.js'),
     headerparser = require(process.cwd() + '/app/controllers/header-parser.js'),
     Shorturl = require(process.cwd() + '/app/controllers/shorturl.js'),
