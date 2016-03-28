@@ -1,10 +1,9 @@
 'use strict';
 
-var url = require('url');
-var timestamp = require(process.cwd() + '/app/controllers/timestamp.js');
-var headerparser = require(process.cwd() + '/app/controllers/header-parser.js');
-var Shorturl = require(process.cwd() + '/app/controllers/shorturl.js');
-var Imagesearch = require(process.cwd() + '/app/controllers/imagesearch.js');
+var timestamp = require(process.cwd() + '/app/controllers/timestamp.js'),
+    headerparser = require(process.cwd() + '/app/controllers/header-parser.js'),
+    Shorturl = require(process.cwd() + '/app/controllers/shorturl.js'),
+    Imagesearch = require(process.cwd() + '/app/controllers/imagesearch.js');
 
 module.exports = function(app, db) {
 

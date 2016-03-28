@@ -1,11 +1,10 @@
 'use strict';
 
 function headerparser(req, res) {
-	var ip = req.ip;
-  var lang = req.headers['accept-language'];
-  var soft = req.headers['user-agent'];
+	var ip = req.headers['host'];
+  var lang = req.headers['accept-language'].substr(0, 5);
+  var soft = req.headers['user-agent'].replace( /(^.*\(|\).*$)/g, '' );
   res.json({'ip': ip, 'lang': lang, 'software': soft});
-  // res.json(req.headers);
 }
 
 module.exports = headerparser;
